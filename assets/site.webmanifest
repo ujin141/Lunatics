@@ -1,0 +1,28 @@
+{
+  "name": "LUNATICS GROUP — AI 기반 혁신 그룹",
+  "short_name": "LNC",
+  "description": "AI와 데이터, 창의성을 융합해 산업의 기준을 재정의하는 혁신 그룹. AI 소셜 플랫폼 MIGO 개발사.",
+  "lang": "ko",
+  "dir": "ltr",
+  "categories": ["business", "productivity", "technology"],
+  "icons": [
+    {
+      "src": "android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#02040F",
+  "background_color": "#02040F",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "start_url": "/",
+  "scope": "/"
+}
