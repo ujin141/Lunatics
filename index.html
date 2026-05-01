@@ -16,6 +16,9 @@
   <meta name="naver-site-verification" content="aa0903dd868666b7ba37e7499a455fd439cd3027" />
   <link rel="canonical" href="https://lunaticsgroup.com/" />
   <link rel="alternate" hreflang="ko" href="https://lunaticsgroup.com/" />
+  <link rel="alternate" hreflang="en" href="https://lunaticsgroup.com/en/" />
+  <link rel="alternate" hreflang="th" href="https://lunaticsgroup.com/th/" />
+  <link rel="alternate" hreflang="x-default" href="https://lunaticsgroup.com/" />
 
   <!-- ══════════════════════════════════════════
        GEO/AEO: JSON-LD 구조화 데이터
@@ -293,7 +296,12 @@
     <li><a href="#portfolio">PORTFOLIO</a></li>
     <li><a href="#cta">CONTACT</a></li>
   </ul>
-  <button class="nav-cta" onclick="openModal()"><span>파트너 문의</span></button>
+  <div class="lang-switcher">
+    <button class="lang-btn active" data-lang="ko">KO</button>
+    <button class="lang-btn" data-lang="en">EN</button>
+    <button class="lang-btn" data-lang="th">TH</button>
+  </div>
+  <button class="nav-cta" onclick="openModal()"><span data-i18n="nav-cta">파트너 문의</span></button>
 </nav>
 
 <!-- HERO -->
@@ -303,7 +311,7 @@
     <span class="line1 glitch" data-text="INTELLIGENT">INTELLIGENT</span>
     <span class="line2">CREATION.</span>
   </h1>
-  <p class="hero-sub">
+  <p class="hero-sub" data-i18n="hero-sub">
     AI와 데이터, 창의성의 융합으로 산업의 기준을 재정의하는 혁신 집단.<br/>
     우리는 새로운 룰을 따르는 것이 아닌, 새로운 룰을 만듭니다.
   </p>
@@ -315,8 +323,8 @@
     <span class="hero-tag">DATA-POWERED</span>
   </div>
   <div class="hero-btns">
-    <button class="btn-primary" onclick="document.getElementById('portfolio').scrollIntoView({behavior:'smooth'})">포트폴리오 →</button>
-    <button class="btn-outline" onclick="openModal()">파트너 문의</button>
+    <button class="btn-primary" onclick="document.getElementById('portfolio').scrollIntoView({behavior:'smooth'})" data-i18n="btn-portfolio">포트폴리오 →</button>
+    <button class="btn-outline" onclick="openModal()" data-i18n="btn-partner">파트너 문의</button>
   </div>
   <div class="hero-scroll"><span>SCROLL</span><div class="scroll-bar"></div></div>
 </section>
@@ -351,7 +359,7 @@
     <div class="vm-card glass-card tilt reveal-left">
       <div class="icon-box p">🔭</div>
       <h3>Vision</h3>
-      <p>기술과 창의성의 융합을 통해 산업의 기준을 재정의하고, 글로벌 시장에서 새로운 표준을 제시하는 혁신 기업이 됩니다.</p>
+      <p data-i18n="vision-text">기술과 창의성의 융합을 통해 산업의 기준을 재정의하고, 글로벌 시장에서 새로운 표준을 제시하는 혁신 기업이 됩니다.</p>
       <div class="vm-pills">
         <span class="vm-pill">REDEFINE</span>
         <span class="vm-pill">GLOBAL</span>
@@ -361,7 +369,7 @@
     <div class="vm-card glass-card tilt reveal-right">
       <div class="icon-box m">🎯</div>
       <h3>Mission</h3>
-      <p>데이터 기반 인사이트를 제공하고, 사용자 맞춤형 솔루션을 개발하며, 빠른 실행으로 차별화된 결과를 창출합니다.</p>
+      <p data-i18n="mission-text">데이터 기반 인사이트를 제공하고, 사용자 맞춤형 솔루션을 개발하며, 빠른 실행으로 차별화된 결과를 창출합니다.</p>
       <div class="vm-pills">
         <span class="vm-pill">INSIGHT</span>
         <span class="vm-pill">GROWTH</span>
@@ -376,15 +384,15 @@
   <div class="section-inner">
     <div class="reveal">
       <div class="section-label">CORE VALUES</div>
-      <h2 class="section-title">우리가 믿는 <span class="accent">세 가지 원칙</span></h2>
-      <p class="section-desc">기술, 예술, 전략을 결합한 창의적 사고로 기존의 한계를 초월합니다.</p>
+      <h2 class="section-title" data-i18n="values-title">우리가 믿는 <span class="accent">세 가지 원칙</span></h2>
+      <p class="section-desc" data-i18n="values-desc">기술, 예술, 전략을 결합한 창의적 사고로 기존의 한계를 초월합니다.</p>
     </div>
     <div class="values-grid">
       <div class="value-card glass-card tilt reveal">
         <div class="top-line"></div>
         <div class="value-num">// 01</div>
         <h3>Fusion Thinking</h3>
-        <p>기술, 예술, 전략을 결합한 창의적 사고. 경계를 허물고 새로운 관점에서 문제를 해결합니다.</p>
+        <p data-i18n="val1-text">기술, 예술, 전략을 결합한 창의적 사고. 경계를 허물고 새로운 관점에서 문제를 해결합니다.</p>
         <span class="value-badge vb-p">CREATIVE</span>
         <div class="corner">01</div>
       </div>
@@ -392,7 +400,7 @@
         <div class="top-line"></div>
         <div class="value-num">// 02</div>
         <h3>Leading Originality</h3>
-        <p>기존 틀을 깨는 독창적인 가치 창출. 업계의 룰을 따르는 것이 아닌, 새로운 룰을 만듭니다.</p>
+        <p data-i18n="val2-text">기존 틀을 깨는 독창적인 가치 창출. 업계의 룰을 따르는 것이 아닌, 새로운 룰을 만듭니다.</p>
         <span class="value-badge vb-m">PIONEER</span>
         <div class="corner">02</div>
       </div>
@@ -400,7 +408,7 @@
         <div class="top-line"></div>
         <div class="value-num">// 03</div>
         <h3>Precision Expertise</h3>
-        <p>AI와 데이터 기반의 정밀한 결과 도출. 직관이 아닌 데이터로 모든 의사결정을 뒷받침합니다.</p>
+        <p data-i18n="val3-text">AI와 데이터 기반의 정밀한 결과 도출. 직관이 아닌 데이터로 모든 의사결정을 뒷받침합니다.</p>
         <span class="value-badge vb-c">DATA-DRIVEN</span>
         <div class="corner">03</div>
       </div>
@@ -413,20 +421,20 @@
   <div class="section-inner">
     <div>
       <div class="section-label reveal">BEHAVIOR</div>
-      <h2 class="section-title reveal">행동 <span class="accent">원칙</span></h2>
-      <p class="section-desc reveal">LUNATICS의 모든 구성원이 공유하는 실행 방식</p>
+      <h2 class="section-title reveal" data-i18n="behavior-title">행동 <span class="accent">원칙</span></h2>
+      <p class="section-desc reveal" data-i18n="behavior-desc">LUNATICS의 모든 구성원이 공유하는 실행 방식</p>
       <div class="behavior-list">
         <div class="behavior-item reveal">
           <div class="b-dot p"></div>
-          <div><h4>Insight Driven</h4><p>데이터 기반 의사결정. 모든 판단의 근거는 숫자와 인사이트입니다.</p></div>
+          <div><h4>Insight Driven</h4><p data-i18n="b1-text">데이터 기반 의사결정. 모든 판단의 근거는 숫자와 인사이트입니다.</p></div>
         </div>
         <div class="behavior-item reveal">
           <div class="b-dot m"></div>
-          <div><h4>Boundary-less</h4><p>경계를 넘는 협업. 분야와 조직의 경계 없이 최선의 결과를 추구합니다.</p></div>
+          <div><h4>Boundary-less</h4><p data-i18n="b2-text">경계를 넘는 협업. 분야와 조직의 경계 없이 최선의 결과를 추구합니다.</p></div>
         </div>
         <div class="behavior-item reveal">
           <div class="b-dot c"></div>
-          <div><h4>Precision Execution</h4><p>정확하고 빠른 실행. 완벽한 계획보다 빠른 실행과 반복이 더 강력합니다.</p></div>
+          <div><h4>Precision Execution</h4><p data-i18n="b3-text">정확하고 빠른 실행. 완벽한 계획보다 빠른 실행과 반복이 더 강력합니다.</p></div>
         </div>
       </div>
     </div>
@@ -448,7 +456,7 @@
   <div class="section-inner">
     <div class="reveal">
       <div class="section-label">PORTFOLIO</div>
-      <h2 class="section-title">우리가 만드는 <span class="accent">제품</span></h2>
+      <h2 class="section-title" data-i18n="portfolio-title">우리가 만드는 <span class="accent">제품</span></h2>
     </div>
     <div class="portfolio-grid">
       <div class="p-main reveal-left">
@@ -458,24 +466,24 @@
         </div>
         <div class="p-cat">// SOCIAL PLATFORM</div>
         <h3>MIGO</h3>
-        <p>관심사 기반으로 사람들을 연결하고, 실제 오프라인 만남까지 이어주는 소셜 플랫폼. 온라인의 연결을 오프라인의 경험으로 확장합니다.</p>
+        <p data-i18n="migo-desc">관심사 기반으로 사람들을 연결하고, 실제 오프라인 만남까지 이어주는 소셜 플랫폼. 온라인의 연결을 오프라인의 경험으로 확장합니다.</p>
         <div class="migo-chips">
-          <span class="migo-chip">관심사 기반 매칭</span>
-          <span class="migo-chip">오프라인 모임</span>
-          <span class="migo-chip">AI 추천</span>
-          <span class="migo-chip">위치 기반</span>
+          <span class="migo-chip" data-i18n="chip1">관심사 기반 매칭</span>
+          <span class="migo-chip" data-i18n="chip2">오프라인 모임</span>
+          <span class="migo-chip" data-i18n="chip3">AI 추천</span>
+          <span class="migo-chip" data-i18n="chip4">위치 기반</span>
         </div>
       </div>
       <div class="p-side">
         <div class="p-side-card glass-card reveal-right">
           <div class="p-coming">// COMING SOON</div>
           <h4>LUNATICS AI Studio</h4>
-          <p>AI 기반 콘텐츠 창작 솔루션. 브랜드의 목소리를 AI로 증폭시킵니다.</p>
+          <p data-i18n="studio-desc">AI 기반 콘텐츠 창작 솔루션. 브랜드의 목소리를 AI로 증폭시킵니다.</p>
         </div>
         <div class="p-side-card glass-card reveal-right">
           <div class="p-coming">// COMING SOON</div>
           <h4>DataPulse</h4>
-          <p>실시간 데이터 인사이트 플랫폼. 비즈니스 의사결정을 데이터로 가속화합니다.</p>
+          <p data-i18n="datapulse-desc">실시간 데이터 인사이트 플랫폼. 비즈니스 의사결정을 데이터로 가속화합니다.</p>
         </div>
       </div>
     </div>
@@ -487,15 +495,15 @@
   <div class="section-inner">
     <div class="reveal">
       <div class="section-label">BRAND IDENTITY</div>
-      <h2 class="section-title">브랜드 <span class="accent">컬러 시스템</span></h2>
-      <p class="section-desc">미래지향적 · 정밀함 · 프리미엄을 담은 팔레트</p>
+      <h2 class="section-title" data-i18n="brand-title">브랜드 <span class="accent">컨러 시스템</span></h2>
+      <p class="section-desc" data-i18n="brand-desc">미래지향적 · 정밀함 · 프리미엄을 담은 팔레트</p>
     </div>
     <div class="colors-row">
       <div class="color-card reveal">
         <div class="color-swatch" style="background:#02040F;"></div>
         <div class="color-info">
           <div class="color-name">Deep Navy</div>
-          <div class="color-meaning">신뢰와 안정</div>
+          <div class="color-meaning" data-i18n="color1-meaning">신뢰와 안정</div>
           <div class="color-hex">#02040F</div>
         </div>
       </div>
@@ -503,7 +511,7 @@
         <div class="color-swatch" style="background:linear-gradient(135deg,#7C3AED,#A855F7);"></div>
         <div class="color-info">
           <div class="color-name">Purple</div>
-          <div class="color-meaning">창의성과 독창성</div>
+          <div class="color-meaning" data-i18n="color2-meaning">창의성과 독창성</div>
           <div class="color-hex">#7C3AED</div>
         </div>
       </div>
@@ -511,7 +519,7 @@
         <div class="color-swatch" style="background:linear-gradient(135deg,#00FFD1,#22D3EE);"></div>
         <div class="color-info">
           <div class="color-name">Mint / Cyan</div>
-          <div class="color-meaning">기술과 혁신</div>
+          <div class="color-meaning" data-i18n="color3-meaning">기술과 혁신</div>
           <div class="color-hex">#00FFD1</div>
         </div>
       </div>
@@ -519,7 +527,7 @@
         <div class="color-swatch" style="background:linear-gradient(135deg,#fff,#e2e8f0);"></div>
         <div class="color-info">
           <div class="color-name">White</div>
-          <div class="color-meaning">미니멀함과 명확성</div>
+          <div class="color-meaning" data-i18n="color4-meaning">미니멀함과 명확성</div>
           <div class="color-hex">#FFFFFF</div>
         </div>
       </div>
@@ -530,11 +538,11 @@
 <!-- CTA -->
 <section id="cta">
   <div class="cta-wrap reveal">
-    <h2>새로운 기준을<br/>함께 만들어요</h2>
-    <p>LUNATICS와 함께 AI + 데이터로 비즈니스의 새 챕터를 여세요.</p>
+    <h2 data-i18n="cta-title">새로운 기준을<br/>함께 만들어요</h2>
+    <p data-i18n="cta-desc">LUNATICS와 함께 AI + 데이터로 비즈니스의 새 챕터를 여세요.</p>
     <div class="cta-btns">
-      <button class="btn-primary" onclick="openModal()">파트너 문의하기 →</button>
-      <button class="btn-outline" onclick="document.getElementById('portfolio').scrollIntoView({behavior:'smooth'})">포트폴리오 보기</button>
+      <button class="btn-primary" onclick="openModal()" data-i18n="cta-btn1">파트너 문의하기 →</button>
+      <button class="btn-outline" onclick="document.getElementById('portfolio').scrollIntoView({behavior:'smooth'})" data-i18n="cta-btn2">포트폴리오 보기</button>
     </div>
   </div>
 </section>
@@ -551,7 +559,7 @@
       <a href="#values">VALUES</a>
       <a href="#portfolio">PORTFOLIO</a>
       <a href="mailto:contact@lunaticsgroup.com">CONTACT</a>
-      <a href="mailto:contact@lunaticsgroup.com?subject=%EA%B3%84%EC%A0%95%20%EB%B0%8F%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%82%AD%EC%A0%9C%20%EC%9A%94%EC%B2%AD&body=%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94%2C%0A%0A%EC%9E%AC%EA%B3%B5%20%EC%95%B1(MIGO)%20%EA%B3%84%EC%A0%95%20%EB%B0%8F%20%EA%B4%80%EB%A0%A8%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%82%AD%EC%A0%9C%EB%A5%BC%20%EC%9A%94%EC%B2%AD%ED%95%A9%EB%8B%88%EB%8B%A4.%0A%0A%5B%EA%B0%80%EC%9E%85%20%EC%9D%B4%EB%A9%94%EC%9D%BC%5D%3A%20%0A%5B%EA%B0%80%EC%9E%85%20%EB%8B%89%EB%84%A4%EC%9E%84%5D%3A%20%0A%0A%EC%9A%94%EC%B2%AD%20%EC%82%AC%ED%95%AD%3A%20%EA%B3%84%EC%A0%95%20%EB%B0%8F%20%EB%AA%A8%EB%93%A0%20%EA%B4%80%EB%A0%A8%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%82%AD%EC%A0%9C" style="opacity:.7;font-size:.8rem;">데이터 삭제 요청</a>
+      <a href="mailto:contact@lunaticsgroup.com?subject=%EA%B3%84%EC%A0%95%20%EB%B0%8F%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%82%AD%EC%A0%9C%20%EC%9A%94%EC%B2%AD&body=%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94%2C%0A%0A%EC%9E%AC%EA%B3%B5%20%EC%95%B1(MIGO)%20%EA%B3%84%EC%A0%95%20%EB%B0%8F%20%EA%B4%80%EB%A0%A8%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%82%AD%EC%A0%9C%EB%A5%BC%20%EC%9A%94%EC%B2%AD%ED%95%A9%EB%8B%88%EB%8B%A4.%0A%0A%5B%EA%B0%80%EC%9E%85%20%EC%9D%B4%EB%A9%94%EC%9D%BC%5D%3A%20%0A%5B%EA%B0%80%EC%9E%85%20%EB%8B%89%EB%84%A4%EC%9E%84%5D%3A%20%0A%0A%EC%9A%94%EC%B2%AD%20%EC%82%AC%ED%95%AD%3A%20%EA%B3%84%EC%A0%95%20%EB%B0%8F%20%EB%AA%A8%EB%93%A0%20%EA%B4%80%EB%A0%A8%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%82%AD%EC%A0%9C" style="opacity:.7;font-size:.8rem;" data-i18n="footer-delete">데이터 삭제 요청</a>
     </div>
   </div>
   <div class="footer-bottom">
@@ -566,45 +574,45 @@
   <div class="modal-box">
     <button class="modal-close" onclick="closeModal()">✕</button>
     <div id="form-area">
-      <h3>파트너 문의</h3>
-      <p class="modal-sub">LUNATICS GROUP과 함께 새로운 기준을 만들어보세요.</p>
+      <h3 data-i18n="modal-title">파트너 문의</h3>
+      <p class="modal-sub" data-i18n="modal-sub">LUNATICS GROUP과 함께 새로운 기준을 만들어보세요.</p>
       <form id="contact-form" onsubmit="submitForm(event)" novalidate>
         <div class="form-row">
           <div class="form-group">
-            <label>// 이름 *</label>
-            <input type="text" name="name" placeholder="홍길동" required />
+            <label data-i18n="label-name">// 이름 *</label>
+            <input type="text" name="name" placeholder="홍길동" data-i18n="ph-name" required />
           </div>
           <div class="form-group">
-            <label>// 회사명</label>
-            <input type="text" name="company" placeholder="OO 주식회사" />
+            <label data-i18n="label-company">// 회사명</label>
+            <input type="text" name="company" placeholder="OO 주식회사" data-i18n="ph-company" />
           </div>
         </div>
         <div class="form-group">
-          <label>// 이메일 *</label>
+          <label data-i18n="label-email">// 이메일 *</label>
           <input type="email" name="email" placeholder="hello@company.com" required />
         </div>
         <div class="form-group">
-          <label>// 문의 유형</label>
+          <label data-i18n="label-type">// 문의 유형</label>
           <select name="type">
-            <option value="">선택해주세요</option>
-            <option>비즈니스 파트너십</option>
-            <option>AI 솔루션 도입</option>
-            <option>투자 및 제휴</option>
-            <option>채용 및 협업</option>
-            <option>기타 문의</option>
+            <option value="" data-i18n="opt-default">선택해주세요</option>
+            <option data-i18n="opt1">비즈니스 파트너십</option>
+            <option data-i18n="opt2">AI 솔루션 도입</option>
+            <option data-i18n="opt3">투자 및 제휴</option>
+            <option data-i18n="opt4">채용 및 협업</option>
+            <option data-i18n="opt5">기타 문의</option>
           </select>
         </div>
         <div class="form-group">
-          <label>// 문의 내용 *</label>
-          <textarea name="message" placeholder="어떤 프로젝트를 구상 중이신가요? 자유롭게 작성해주세요." required></textarea>
+          <label data-i18n="label-message">// 문의 내용 *</label>
+          <textarea name="message" placeholder="어떤 프로젝트를 구상 중이신가요? 자유롭게 작성해주세요." data-i18n="ph-message" required></textarea>
         </div>
-        <button class="form-submit" type="submit">문의 보내기 →</button>
+        <button class="form-submit" type="submit" data-i18n="btn-submit">문의 보내기 →</button>
       </form>
     </div>
     <div class="form-success" id="form-success">
       <div class="check">✅</div>
-      <h4>문의가 접수되었습니다!</h4>
-      <p>빠른 시일 내에 연락드리겠습니다.<br/>contact@lunaticsgroup.com</p>
+      <h4 data-i18n="success-title">문의가 접수되었습니다!</h4>
+      <p data-i18n="success-desc">빠른 시일 내에 연락드리겠습니다.<br/>contact@lunaticsgroup.com</p>
     </div>
   </div>
 </div>
@@ -632,25 +640,24 @@
     e.preventDefault();
     const form = document.getElementById('contact-form');
     const btn = form.querySelector('.form-submit');
+    const t = window.TRANSLATIONS && window.TRANSLATIONS[window.currentLang || 'ko'];
 
     // 필수값 검증
     const name = form.querySelector('[name="name"]').value.trim();
     const email = form.querySelector('[name="email"]').value.trim();
     const message = form.querySelector('[name="message"]').value.trim();
     if (!name || !email || !message) {
-      alert('이름, 이메일, 문의 내용은 필수 항목입니다.');
+      alert(t ? t['alert-required'] : '이름, 이메일, 문의 내용은 필수 항목입니다.');
       return;
     }
 
     // 전송 중 UI
     btn.disabled = true;
-    btn.textContent = '전송 중...';
+    btn.textContent = t ? t['btn-sending'] : '전송 중...';
 
     try {
       const data = new FormData(form);
-      // Formspree 엔드포인트: https://formspree.io/f/{YOUR_ID}
-      // 아래 URL을 Formspree 가입 후 발급받은 엔드포인트로 교체하세요
-      const FORMSPREE_URL = 'https://formspree.io/f/xdkezzpw';
+      const FORMSPREE_URL = 'https://formspree.io/f/mnjqnvoe';
       const res = await fetch(FORMSPREE_URL, {
         method: 'POST',
         body: data,
@@ -665,9 +672,9 @@
       }
     } catch (err) {
       console.error(err);
-      alert('전송 중 오류가 발생했습니다.\n잠시 후 다시 시도하거나 contact@lunaticsgroup.com으로 직접 연락해주세요.');
+      alert(t ? t['alert-error'] : '전송 중 오류가 발생했습니다.\n잠시 후 다시 시도하거나 contact@lunaticsgroup.com으로 직접 연락해주세요.');
       btn.disabled = false;
-      btn.textContent = '문의 보내기 →';
+      btn.textContent = t ? t['btn-submit'] : '문의 보내기 →';
     }
   }
   document.addEventListener('keydown', (e) => {

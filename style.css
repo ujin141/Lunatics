@@ -804,3 +804,36 @@ footer {
   .section-inner { padding:5rem 5%; }
   .hero-title { font-size:clamp(3rem,14vw,5rem); }
 }
+
+/* ── LANGUAGE SWITCHER ── */
+.lang-switcher {
+  display: flex;
+  gap: .3rem;
+  align-items: center;
+}
+.lang-btn {
+  padding: .28rem .65rem;
+  border-radius: 4px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,.1);
+  font-family: var(--fm);
+  font-size: .68rem;
+  letter-spacing: .08em;
+  color: var(--gray2);
+  cursor: pointer;
+  transition: all .25s var(--ease);
+}
+.lang-btn:hover {
+  border-color: rgba(0,255,209,.35);
+  color: var(--mint);
+}
+.lang-btn.active {
+  background: rgba(0,255,209,.1);
+  border-color: rgba(0,255,209,.4);
+  color: var(--mint);
+  box-shadow: 0 0 10px rgba(0,255,209,.15);
+}
+@media(max-width:600px){
+  .lang-switcher { gap:.2rem; }
+  .lang-btn { padding:.22rem .5rem; font-size:.6rem; }
+}
